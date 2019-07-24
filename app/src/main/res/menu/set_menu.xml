@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/github" android:icon="@drawable/explore_search_icon" android:title="源码地址" />
+    <item android:id="@+id/down_set" android:title="下载配置" />
+    <item android:id="@+id/support_author" android:title="赞助作者" />
+    <item android:id="@+id/qq_group" android:title="反馈群" />
+</menu>

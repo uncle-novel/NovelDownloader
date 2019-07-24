@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/download_img"
+        android:layout_width="52dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="7dp" />
+
+    <LinearLayout
+        android:id="@+id/download_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/download_cancelBtn"
+        android:layout_toRightOf="@id/download_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/download_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/download_text_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="" />
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/download_pb"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="14dp"
+            app:rcBackgroundColor="#bbbbbb"
+            app:rcBackgroundPadding="1dp"
+            app:rcMax="1"
+            app:rcProgress="0.6"
+            app:rcProgressColor="#009688"
+            app:rcRadius="10dp"
+            app:rcReverse="false" />
+    </LinearLayout>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/download_cancelBtn"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:text="取消"
+        android:textSize="12sp"
+        app:bootstrapBrand="danger"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+</RelativeLayout>

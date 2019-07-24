@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">#009688</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">#009688</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="tab_menu_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="background">@drawable/tab_menu_bg</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textColor">@drawable/tab_menu_text</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+</resources>

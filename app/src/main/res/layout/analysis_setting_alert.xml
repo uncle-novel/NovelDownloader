@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Switch
+        android:id="@+id/setting_gl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_margin="10dp"
+        android:text="章节过滤"
+        android:textAlignment="viewStart" />
+
+    <Switch
+        android:id="@+id/setting_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="乱序重排"
+        android:textAlignment="viewStart" />
+
+    <Switch
+        android:id="@+id/setting_ncr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="NCR转中文"
+        android:textAlignment="viewStart" />
+
+    <Switch
+        android:id="@+id/setting_fzj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="繁体转简体"
+        android:textAlignment="viewStart" />
+
+    <Spinner
+        android:id="@+id/setting_rule"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="35dp"
+        android:dropDownWidth="match_parent"
+        android:background="@drawable/spinner_border"
+        android:spinnerMode="dropdown"/>
+
+    <EditText
+        android:id="@+id/setting_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="去广告一行一条"
+        android:background="@drawable/search_background" />
+</LinearLayout>

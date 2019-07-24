@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkWhite"
+    tools:context=".Activity.MainActivity">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/analysis_search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:text="解析"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.unclezs.novel.Activity.USearchBox
+        android:id="@+id/f_analysis_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/analysis_search_btn"
+        app:searchHint="@string/analysis_hint" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/analysis_loading"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="#009688"
+        app:indicatorName="BallClipRotatePulseIndicator" />
+
+    <LinearLayout
+        android:id="@+id/op_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/f_analysis_box"
+        android:orientation="horizontal">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/analysis_selectAll_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="反选"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/analysis_config_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="配置"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/analysis_download_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="下载"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/analysis_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/op_list"
+        android:layout_marginTop="10dp"></ListView>
+</RelativeLayout>

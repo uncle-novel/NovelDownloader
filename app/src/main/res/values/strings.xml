@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Uncle小说</string>
+    <string name="tab_menu_search">小说搜索</string>
+    <string name="tab_menu_analysis">目录解析</string>
+    <string name="tab_menu_download">下载管理</string>
+    <string name="search_cancel">搜索</string>
+    <string name="search_hint">请输入小说名字或者作者</string>
+    <string name="analysis_hint">请输入小说目录地址</string>
+    <string-array name="analysis_setting_data">
+        <item>推荐正文规则</item>
+        <item>正文规则1</item>
+        <item>正文规则2</item>
+    </string-array>
+</resources>

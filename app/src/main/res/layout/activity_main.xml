@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.MainActivity">
+    <com.hjq.bar.TitleBar
+        android:id="@+id/title_bar"
+        app:backButton="false"
+        app:lineVisible="true"
+        app:barStyle="transparent"
+        app:rightTitle="设置"
+        app:rightSize="16sp"
+        app:titleColor="#F0F0F0"
+        app:rightColor="#e2e2e2"
+        android:background="#009688"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        app:leftSize="20sp"
+        app:leftTitle="Uncle小说" />
+    <RadioGroup
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab_menu_bg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab_search"
+            style="@style/tab_menu_btn"
+            android:drawableTop="@drawable/tab_menu_search"
+            android:text="@string/tab_menu_search" />
+        <RadioButton
+            android:id="@+id/tab_analysis"
+            style="@style/tab_menu_btn"
+            android:drawableTop="@drawable/tab_menu_analysis"
+            android:text="@string/tab_menu_analysis" />
+
+        <RadioButton
+            android:id="@+id/tab_download"
+            style="@style/tab_menu_btn"
+            android:drawableTop="@drawable/tab_menu_download"
+            android:text="@string/tab_menu_download" />
+    </RadioGroup>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:layout_above="@id/tab_bar"/>
+</RelativeLayout>

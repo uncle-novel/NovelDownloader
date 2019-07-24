@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="USearchBox">
+        <attr name="searchHint" format="string">请输入小说目录地址</attr>
+    </declare-styleable>
+</resources>
